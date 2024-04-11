@@ -1,0 +1,16 @@
+Partition Merge Status : Successful - Mon Mar 14 13:17:49 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : gsensor
+Top-level Entity Name : DE10_LITE_GSensor
+Family : MAX 10
+Total logic elements : 911
+    Total combinational functions : 674
+    Dedicated logic registers : 645
+Total registers : 645
+Total pins : 126
+Total virtual pins : 0
+Total memory bits : 1,408
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 0

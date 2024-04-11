@@ -1,0 +1,28 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;		
+
+ENTITY decoder IS
+	PORT(
+		DATA0_IN: IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		HEX0 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+		DATA1_IN: IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		HEX1 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0));
+END decoder;
+
+ARCHITECTURE behavior_decoder of decoder IS
+COMPONENT hex_to_7seg IS
+	PORT(
+		data: IN STD_LOGIC_VECTOR(3 downto 0);
+		seg: OUT STD_LOGIC_VECTOR(6 downto 0)
+		);
+END COMPONENT;
+
+BEGIN
+	uni: hex_to_7seg PORT MAP(
+		DATA_IN0(3 DOWNTO 0), HEX0(6 downto 0));
+	HEX0(7) <= '1';
+	
+	dec:	hex_to_7seg PORT MAP(
+		DATA_IN1(3 DOWNTO 0), HEX1(6 downto 0));
+	HEX1(7) <= '1';
+END behavior_decoder;

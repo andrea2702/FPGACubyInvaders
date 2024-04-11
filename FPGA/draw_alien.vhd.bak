@@ -1,0 +1,42 @@
+LIBRARY 	ieee;
+USE 		ieee.std_logic_1164.all;
+USE 		ieee.std_logic_arith.all;
+
+entity draw_aliens is
+	port(
+		Hsync, Vsync, Hactive, Vactive, dena, clk_vga: in std_logic;
+		aliens_vivos : in std_logic_vector(8 downto 0);
+		aliens_color : in std_logic_vector(2 downto 0);
+		numero_linea : in std_logic_vector(5 downto 0));
+end draw_aliens;
+
+architecture aliens_behavior of draw_aliens is
+	begin
+	PROCESS( Hsync, clk_vga, Vactive, Hactive, dena, pos_x, pos_y )
+		VARIABLE v_line_count:	natural RANGE 0 TO V_HIGH;
+		VARIABLE h_line_count:	natural RANGE 0 TO H_HIGH;
+		variable x :  integer RANGE -1 TO H_HIGH+1 := 320;
+		variable y : integer RANGE -1 TO V_HIGH+1 := 240;
+
+	BEGIN
+	
+		IF rising_edge( Hsync ) THEN
+			IF Vactive = '1' THEN
+				v_line_count := line_count + 1;
+			ELSE
+				v_line_count := 0;
+			END IF;
+		END IF;
+		IF rising_edge( clk_vga ) THEN 
+			h_line_count := h_line_count + 1;
+			IF(Hactive = '0') then
+				h_line_count := 0;
+			END IF;
+		END IF;
+		
+		IF dena = '1' THEN
+		
+			
+		END IF;
+	END PROCESS;	
+end aliens_behavior;

@@ -1,0 +1,18 @@
+Fitter Status : Successful - Tue Mar 15 22:02:13 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : gsensor
+Top-level Entity Name : DE10_LITE_GSensor
+Family : MAX 10
+Device : 10M50DAF484C6GES
+Timing Models : Preliminary
+Total logic elements : 14,084 / 49,760 ( 28 % )
+    Total combinational functions : 13,078 / 49,760 ( 26 % )
+    Dedicated logic registers : 3,998 / 49,760 ( 8 % )
+Total registers : 3998
+Total pins : 137 / 360 ( 38 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )
