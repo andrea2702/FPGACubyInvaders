@@ -1,0 +1,51 @@
+; Gumnut procesador
+		text
+		org 0x000 ; start here on reset
+		jmp main
+
+		data
+accel:	        bss 1                           ; 0x00
+cont_a:			bss 1 ; datos de salida de accel  0x01
+shot_button:	bss 1 ; shot bton                 0x02
+cont_k:			bss 1 ; boto                      0x03
+score_in:		bss 1 ;							  0x04
+score_out:		bss 1 ;							  0x05
+;disp7hex0:		bss 1 ; unidades
+;disp7hex1:		bss 1 ; decenas
+
+ZERO:			byte 0;
+
+				text
+				org 0x20
+main: 			ldm r2, ZERO
+				inp r1, accel ; Recibe los datos del acelerometro y los vuelve a enviar
+				out	r1, cont_a 
+				inp r1, score_in ; Recibe los datos del score y los vuelve a mandar
+				out r1, score_out
+				inp r1, shot_button
+				;jsb delay
+				and r1,r1,1 ; Verifica si r1(boton) esta encendido, si r1=1
+				bnz buttonAction;
+				jmp finish
+
+buttonAction:	add r2, r2, 1
+				jmp finish
+
+finish:			out r2, cont_k
+				jmp main
+
+; Bounce
+;delay:		add r7, r0, 0
+;again3:		add r6, r0, 0
+;again2:		add r5, r0, 0
+;again1:		add r5, r5, 1
+;			sub r0, r5, 0xFF
+;			bnz again1
+;			add r6, r6, 1
+;			sub r0, r6, 0xFF
+;			bnz again2
+;			add r7, r7, 1
+;			sub r0, r7, 0x09
+;			bnz again3
+;			ret
+
