@@ -1,0 +1,261 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "HEX0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_HS",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_VS",
+					"strict" : false
+				},
+				{
+					"name" : "GSENSOR_CS_N",
+					"strict" : false
+				},
+				{
+					"name" : "GSENSOR_SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "LEFT_SIGNAL",
+					"strict" : false
+				},
+				{
+					"name" : "RIGHT_SIGNAL",
+					"strict" : false
+				},
+				{
+					"name" : "SHOOT_SIGNAL",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_MOVEMENT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_MOVEMENT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_MOVEMENT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_MOVEMENT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_MOVEMENT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_MOVEMENT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_MOVEMENT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA_MOVEMENT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SHOOT_SIGNAL_OUT",
+					"strict" : false
+				},
+				{
+					"name" : "DEAD_ALIENS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DEAD_ALIENS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DEAD_ALIENS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DEAD_ALIENS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DEAD_ALIENS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DEAD_ALIENS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DEAD_ALIENS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DEAD_ALIENS[7]",
+					"strict" : false
+				},
+				{
+					"name" : "GSENSOR_SDI",
+					"strict" : false
+				},
+				{
+					"name" : "MAX10_CLK1_50",
+					"strict" : false
+				},
+				{
+					"name" : "GSENSOR_INT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

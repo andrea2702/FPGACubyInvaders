@@ -1,0 +1,34 @@
+
+State Machine - |DE10_LITE_GSensor|gumnut_with_mem:gumnut|gumnut:core|state
+Name state.int_state state.write_back_state state.mem_state state.execute_state state.decode_state state.fetch_state 
+state.fetch_state 0 0 0 0 0 0 
+state.decode_state 0 0 0 0 1 1 
+state.execute_state 0 0 0 1 0 1 
+state.mem_state 0 0 1 0 0 1 
+state.write_back_state 0 1 0 0 0 1 
+state.int_state 1 0 0 0 0 1 
+
+State Machine - |DE10_LITE_GSensor|gumnut_controller:u_gumnut_controller|gumnut_with_mem:gumnut|gumnut:core|state
+Name state.int_state state.write_back_state state.mem_state state.execute_state state.decode_state state.fetch_state 
+state.fetch_state 0 0 0 0 0 0 
+state.decode_state 0 0 0 0 1 1 
+state.execute_state 0 0 0 1 0 1 
+state.mem_state 0 0 1 0 0 1 
+state.write_back_state 0 1 0 0 0 1 
+state.int_state 1 0 0 0 0 1 
+
+State Machine - |DE10_LITE_GSensor|vga_interface:VGA|nx_Game_st
+Name nx_Game_st.Delay_st nx_Game_st.Winner_st nx_Game_st.GameOver_st nx_Game_st.Playing_st nx_Game_st.Start_st 
+nx_Game_st.Start_st 0 0 0 0 0 
+nx_Game_st.Playing_st 0 0 0 1 1 
+nx_Game_st.GameOver_st 0 0 1 0 1 
+nx_Game_st.Winner_st 0 1 0 0 1 
+nx_Game_st.Delay_st 1 0 0 0 1 
+
+State Machine - |DE10_LITE_GSensor|vga_interface:VGA|Game_st
+Name Game_st.Delay_st Game_st.Winner_st Game_st.GameOver_st Game_st.Playing_st Game_st.Start_st 
+Game_st.Start_st 0 0 0 0 0 
+Game_st.Playing_st 0 0 0 1 1 
+Game_st.GameOver_st 0 0 1 0 1 
+Game_st.Winner_st 0 1 0 0 1 
+Game_st.Delay_st 1 0 0 0 1 
