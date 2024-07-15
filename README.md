@@ -9,5 +9,4 @@ This project implements a Space Invaders-like game on an FPGA using VHDL, Verilo
 The game runs on an FPGA board connected to a monitor via VGA. It is controlled using a finite state machine. Verilog is used to read the gyroscope data from the board and move the spaceship accordingly (left or right). VHDL is used for shooting functionality (triggered by a button press) and for displaying the score on the FPGA's displays. LEDs are illuminated when shooting, creating an effect. When the player loses, a red screen is displayed, but pressing a button resets the game, showing a blue start screen. When the player wins, the screen turns green, and the game can be reset. Assembly language is used to store game scores.
 
 ## Demo
-
-A video demonstration of the game is available in the repository.
+[![Demo del Proyecto](http://img.youtube.com/vi/IJXFqs_WMvs/0.jpg)](https://youtu.be/IJXFqs_WMvs).
